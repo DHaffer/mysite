@@ -1,4 +1,6 @@
-import { Container, Navbar, Nav, Row, Col, Stack } from 'react-bootstrap';
+import { Container, Navbar, Nav, Row } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
+
 
 function NavigationBar() {
     return (
@@ -8,11 +10,11 @@ function NavigationBar() {
                         <Row></Row>
                         <Row>
                             <Nav>
-                                <Nav.Link href="#Home" className="navbarlinks">Home</Nav.Link>
-                                <Nav.Link href="#Blog" className="navbarlinks">Blog</Nav.Link>
-                                <Nav.Link href="#Music" className="navbarlinks">Music</Nav.Link>
-                                <Nav.Link href="#About" className="navbarlinks">About</Nav.Link>
-                                <Nav.Link href="#Contact" className="navbarlinks">Contact</Nav.Link>
+                                <Nav.Link as={NavLink} to="/" className="navbarlinks">Home</Nav.Link>
+                                <Nav.Link as={NavLink} to="/blog" className="navbarlinks">Blog</Nav.Link>
+                                <Nav.Link as={NavLink} to="/music" className="navbarlinks">Music</Nav.Link>
+                                <Nav.Link as={NavLink} to="/about" className="navbarlinks">About</Nav.Link>
+                                <Nav.Link as={NavLink} to="/contact" className="navbarlinks">Contact</Nav.Link>
                              </Nav>
                         </Row>
                         <Row></Row>
