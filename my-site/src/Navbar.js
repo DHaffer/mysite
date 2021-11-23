@@ -1,5 +1,6 @@
 import { Container, Navbar, Nav, Row } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import { BlinkingCursorTextBuilder } from 'react-animated-text-builders';
 
 
 function NavigationBar() {
@@ -7,7 +8,7 @@ function NavigationBar() {
       <div className="NavigationBar">
             <Navbar bg="dark" variant="dark">
                     <Container fluid>
-                        <Row></Row>
+                       <Row></Row>
                         <Row>
                             <Nav>
                                 <Nav.Link as={NavLink} to="/" className="navbarlinks">Home</Nav.Link>
